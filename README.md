@@ -4,4 +4,4 @@ Hi, I'm Filip—a dedicated and aspiring Quality Assurance specialist. Since lat
 
 [My Linkedin Profile](https://www.linkedin.com/in/filip-mihaljcic/)
 
-[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/39333553-6db6dda4-bd4b-4be5-b593-a3333a632678?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D39333553-6db6dda4-bd4b-4be5-b593-a3333a632678%26entityType%3Dcollection%26workspaceId%3Dd9054491-c6d2-4f2b-a58c-5f95a41827c6)]
+[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/39333553-6db6dda4-bd4b-4be5-b593-a3333a632678?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D39333553-6db6dda4-bd4b-4be5-b593-a3333a632678%26entityType%3Dcollection%26workspaceId%3Dd9054491-c6d2-4f2b-a58c-5f95a41827c6)
