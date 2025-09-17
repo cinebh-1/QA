@@ -13,3 +13,6 @@ Tools 🔧
 - [Dropbox](https://www.dropbox.com/) - storing data 
 - [Git](https://git-scm.com/) - controling version control
 - [Github](https://github.com/) - for support of Git and creating repositories
+- [Postman](https://www.postman.com/) - for API testing
+- [Playwright](https://playwright.dev/) - for testing web apps
+- [VisualStudioCode](https://code.visualstudio.com/) - writing and editing code 
