@@ -16,4 +16,16 @@ Tools 🔧
 - [Postman](https://www.postman.com/) - for API testing
 - [Playwright](https://playwright.dev/) - for testing web apps
 - [VisualStudioCode](https://code.visualstudio.com/) - writing and editing code
-- [JMeter](https://jmeter.apache.org/) - load and performance testing 
+- [JMeter](https://jmeter.apache.org/) - load and performance testing
+
+Soft skills 📁
+- precision
+- communication
+- patience
+- empathy
+- listening
+
+Courses 📖
+- [QA From Scratch: Your Journey To Manual Testing 2025](https://www.udemy.com/certificate/UC-183122a1-ec9c-40ce-a55c-b0808ad04eae/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com)
+- [Playwright tutorial with JavaScript](https://www.youtube.com/playlist?list=PLL34mf651faPMrUKrJP5HFIBeihgmGQTX)
+-  
