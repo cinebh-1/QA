@@ -18,6 +18,16 @@ Tools 🔧
 - [VisualStudioCode](https://code.visualstudio.com/) - writing and editing code
 - [JMeter](https://jmeter.apache.org/) - load and performance testing
 
+Tech skills 🖥️
+- [SQL](https://www.w3schools.com/sql/)
+- REST API testing
+- Basic knowledge about software development models (waterfall, agile, scrum, lean, kanban etc...)
+- Software testing
+- Creating test cases
+- Manual and automated testing
+- Creating bug reports
+- Reporting bugs 
+
 Soft skills 📁
 - precision
 - communication
