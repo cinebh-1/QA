@@ -15,4 +15,5 @@ Tools 🔧
 - [Github](https://github.com/) - for support of Git and creating repositories
 - [Postman](https://www.postman.com/) - for API testing
 - [Playwright](https://playwright.dev/) - for testing web apps
-- [VisualStudioCode](https://code.visualstudio.com/) - writing and editing code 
+- [VisualStudioCode](https://code.visualstudio.com/) - writing and editing code
+- [JMeter](https://jmeter.apache.org/) - load and performance testing 
