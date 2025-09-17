@@ -27,5 +27,6 @@ Soft skills 📁
 
 Courses 📖
 - [QA From Scratch: Your Journey To Manual Testing 2025](https://www.udemy.com/certificate/UC-183122a1-ec9c-40ce-a55c-b0808ad04eae/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com)
-- [Playwright tutorial](https://www.youtube.com/playlist?list=PLL34mf651faPMrUKrJP5HFIBeihgmGQTX)
-- [Postman tutorial](https://www.youtube.com/playlist?list=PLL34mf651faNJ6Wm8elGZl5mr9Zf14dWH)
+- [Playwright](https://www.youtube.com/playlist?list=PLL34mf651faPMrUKrJP5HFIBeihgmGQTX)
+- [Postman](https://www.youtube.com/playlist?list=PLL34mf651faNJ6Wm8elGZl5mr9Zf14dWH)
+- [JMeter](https://youtu.be/1tJGRWABpW0)
