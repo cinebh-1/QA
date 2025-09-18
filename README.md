@@ -7,7 +7,6 @@ Hi, I'm Filip — a dedicated and aspiring Quality Assurance specialist. Since b
 **My experience** 🏛️
 Being in IT world for long enough I have gone through lot of stuff. When I stumbled into QA I knew that it was made for me. Through series of courses and self-learning for about 8 months I was immersed into the matter because of testing proceses and finding bugs. I have grown very fond of this role which motivates me to continue learning and growing. In addition my previous job responsibilities were providing general PC and network support for school I was working in (IT technician). Besides that working as IT teacher as well helped me learn lot of valueable soft skills as well.  
 
-Postman Collection 
 [<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/39333553-a220413a-cca7-4579-a193-0e34e9ad62ff?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D39333553-a220413a-cca7-4579-a193-0e34e9ad62ff%26entityType%3Dcollection%26workspaceId%3Dd9054491-c6d2-4f2b-a58c-5f95a41827c6)
 
 Tools 🔧
