@@ -30,11 +30,10 @@ Collections 📚
 Tech skills 🖥️
 - [SQL](https://www.w3schools.com/sql/)
   
-  |  Syntax and order of execution  |  Comparison operators  |  Logical operators  |  Scalar functions  |  Aggregate functions |  Others   | 
-  |             :---:               |          :---:         |        :---:        |        :---:       |       :---:          |   :---:   |
-  |       SELECT (*, LIKE, TOP)     |            =           |         AND         |       GETDATE      |       COUNT()        |   JOIN    |
-  |              :---:              |          :---:         |        :---:        |        :---:       |       :---:          |   :---:   |
-  |              FROM               |            !=          |         BET     |             |       :---:          |   :---:   |
+  |  Syntax and order of execution  |  Comparison operators  |  Logical operators |   Scalar functions |  Aggregate functions |  Others   | 
+  |             :---:               |          :---:         |       :---:        |        :---:       |       :---:          |   :---:   |
+  |       SELECT (*, LIKE, TOP)     |            =           |        AND         |       GETDATE      |       COUNT()        |   JOIN    |
+  |              FROM               |            !=          |        BETWEEN     |       UPPER        |       SUM()          |    AS     |
   
   
 
