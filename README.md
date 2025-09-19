@@ -33,7 +33,7 @@ Tech skills 🖥️
   |  Syntax and order of execution  |  Comparison operators  |  Logical operators  |  Scalar functions  |  Aggregate functions  |  Others | 
   |             :---:               |          :---:         |        :---:        |        :---:       |        :---:          |  :---:  |
   |       SELECT (*, LIKE, TOP)     |            =           |         AND         |       GETDATE      |       COUNT()         |  JOIN   |
-  |   ---------------------------   | ---------------------- | ----------- 
+  |              :---: 
   
 
 - REST API testing
