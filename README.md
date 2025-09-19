@@ -30,7 +30,9 @@ Collections 📚
 Tech skills 🖥️
 - [SQL](https://www.w3schools.com/sql/)
   
- |Syntax and order of execution | Comparison operators |
+ | Syntax and order of execution | Comparison operators | Logical operators | Scalar functions | Aggregate functions | Other | 
+ | ----------------------------- |--------------------- | ----------------- | ---------------- | ------------------- | ------|
+  
 
 - REST API testing
 - Basic knowledge about software development models (waterfall, agile, scrum, lean, kanban etc...)
