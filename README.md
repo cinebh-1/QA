@@ -28,6 +28,10 @@ Collections 📚
 
 Tech skills 🖥️
 - [SQL](https://www.w3schools.com/sql/)
+- | First header | Second header |
+- | -----------  | -----------   |
+- | Content cell | Content cell  |
+- | Content cell | Content cell  |
 - REST API testing
 - Basic knowledge about software development models (waterfall, agile, scrum, lean, kanban etc...)
 - Software testing
