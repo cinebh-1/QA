@@ -14,6 +14,7 @@ Tools 🔧
 - [Dropbox](https://www.dropbox.com/) - storing data 
 - [Git](https://git-scm.com/) - controling version control
 - [Github](https://github.com/) - for support of Git and creating repositories
+- [Github Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) - for easier formatting Github
 - [Postman](https://www.postman.com/) - for API testing
 - [Playwright](https://playwright.dev/) - for testing web apps
 - [VisualStudioCode](https://code.visualstudio.com/) - writing and editing code
