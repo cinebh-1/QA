@@ -34,6 +34,7 @@ Tech skills 🖥️
   |             :---:               |          :---:         |       :---:        |        :---:       |       :---:          |   :---:   |
   |       SELECT (*, LIKE, TOP)     |            =           |        AND         |       GETDATE      |       COUNT()        |   JOIN    |
   |              FROM               |            !=          |        BETWEEN     |       UPPER        |       SUM()          |    AS     |
+  |               WHERE             |            <>          |        IN          |         LOWER      |       MIN()          |   UNION   |
   
   
 
