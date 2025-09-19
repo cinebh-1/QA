@@ -28,6 +28,7 @@ Collections 📚
 
 Tech skills 🖥️
 - [SQL](https://www.w3schools.com/sql/)
+- 
 - | First header | Second header |
 - | -----------  | -----------   |
 - | Content cell | Content cell  |
