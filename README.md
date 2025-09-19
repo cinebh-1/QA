@@ -25,6 +25,7 @@ Collections 📚
 <br />
 [Test cases]()
 <br />
+
 Tech skills 🖥️
 - [SQL](https://www.w3schools.com/sql/)
 - REST API testing
