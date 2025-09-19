@@ -30,12 +30,15 @@ Collections 📚
 Tech skills 🖥️
 - [SQL](https://www.w3schools.com/sql/)
   
-  |  Syntax and order of execution  |  Comparison operators  |  Logical operators |   Scalar functions |  Aggregate functions |  Others   | 
-  |             :---:               |          :---:         |       :---:        |        :---:       |       :---:          |   :---:   |
-  |       SELECT (*, LIKE, TOP)     |            =           |        AND         |       GETDATE      |       COUNT()        |   JOIN    |
-  |              FROM               |            !=          |        BETWEEN     |       UPPER        |       SUM()          |    AS     |
-  |              WHERE              |            <>          |        IN          |       LOWER        |       MIN()          |   UNION   |
-  |            GROUP BY             |            >           |        LIKE        |      DATEDIFF      |                      |           |
+  |  Syntax and order of execution |  Comparison operators  |  Logical operators |   Scalar functions |  Aggregate functions |  Others   | 
+  |             :---:              |          :---:         |       :---:        |        :---:       |       :---:          |   :---:   |
+  |      SELECT (*, LIKE, TOP)     |            =           |        AND         |       GETDATE      |       COUNT()        |   JOIN    |
+  |             FROM               |            !=          |        BETWEEN     |       UPPER        |       SUM()          |    AS     |
+  |             WHERE              |            <>          |        IN          |       LOWER        |       MIN()          |   UNION   |
+  |           GROUP BY             |            >           |        LIKE        |      DATEDIFF      |         /            |    /      |
+  |           ORDER BY             |            <           |        NOT         |                    |         /            |    /      |
+  |           UPDATE (SET)         |            >=          |        OR          |                    |         /            |    /      |
+  |           ALTER TABLE (ADD)    |            <=          |       IS NULL      |                    |         /            |    /      | 
   
   
 
