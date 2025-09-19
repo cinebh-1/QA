@@ -35,13 +35,12 @@ Tech skills 🖥️
   |      SELECT (*, LIKE, TOP)     |            =           |        AND         |       GETDATE      |       COUNT()        |   JOIN    |
   |             FROM               |            !=          |        BETWEEN     |       UPPER        |       SUM()          |    AS     |
   |             WHERE              |            <>          |        IN          |       LOWER        |       MIN()          |   UNION   |
-  |           GROUP BY             |            >           |        LIKE        |      DATEDIFF      |         /            |    /      |
-  |           ORDER BY             |            <           |        NOT         |         /          |         /            |    /      |
-  |           UPDATE (SET)         |            >=          |        OR          |         /          |         /            |    /      |
-  |           ALTER TABLE (ADD)    |            <=          |       IS NULL      |         /          |         /            |    /      | 
-  
-  
-
+  |           GROUP BY             |            >           |        LIKE        |      DATEDIFF      |                      |           |
+  |           ORDER BY             |            <           |        NOT         |                    |                      |           |
+  |           UPDATE (SET)         |            >=          |        OR          |                    |                      |           |
+  |           ALTER TABLE (ADD)    |            <=          |       IS NULL      |                    |                      |           |
+  |           INSERT INTO          |            !<          |       IS NOT NULL  |                    |                      |           |
+  |                                |            !>          |                    |                    |                      |           |
 - REST API testing
 - Basic knowledge about software development models (waterfall, agile, scrum, lean, kanban etc...)
 - Software testing
