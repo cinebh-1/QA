@@ -36,9 +36,9 @@ Tech skills 🖥️
   |             FROM               |            !=          |        BETWEEN     |       UPPER        |       SUM()          |    AS     |
   |             WHERE              |            <>          |        IN          |       LOWER        |       MIN()          |   UNION   |
   |           GROUP BY             |            >           |        LIKE        |      DATEDIFF      |         /            |    /      |
-  |           ORDER BY             |            <           |        NOT         |                    |         /            |    /      |
-  |           UPDATE (SET)         |            >=          |        OR          |                    |         /            |    /      |
-  |           ALTER TABLE (ADD)    |            <=          |       IS NULL      |                    |         /            |    /      | 
+  |           ORDER BY             |            <           |        NOT         |         /          |         /            |    /      |
+  |           UPDATE (SET)         |            >=          |        OR          |         /          |         /            |    /      |
+  |           ALTER TABLE (ADD)    |            <=          |       IS NULL      |         /          |         /            |    /      | 
   
   
 
