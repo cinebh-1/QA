@@ -19,6 +19,7 @@ Tools 🔧
 - [Playwright](https://playwright.dev/) - for testing web apps
 - [VisualStudioCode](https://code.visualstudio.com/) - writing and editing code
 - [JMeter](https://jmeter.apache.org/) - load and performance testing
+- [TestRail](https://www.testrail.com/) - test case managment software 
 
 Collections 📚
 <br />
