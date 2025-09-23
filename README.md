@@ -7,7 +7,7 @@ Hi, I'm Filip — a dedicated and aspiring Quality Assurance specialist. Since b
 
 **My experience** 🏛️
 <br />
-Being in IT world for long enough I have gone through lot of stuff. When I stumbled into QA I knew that it was made for me. Through series of courses and self-learning for about 8 months I was immersed into the matter because of testing proceses and finding bugs. I have grown very fond of this role which motivates me to continue learning and growing. In addition my previous job responsibilities were providing general PC and network support for school I was working in (IT technician). Besides that working as IT teacher as well helped me learn lot of valueable soft skills as well.  
+Being in IT world for long enough I have gone through lot of stuff. When I stumbled into QA I knew that it was made for me. Through series of courses and self-learning for about 1 year I was immersed into the matter because of testing proceses and finding bugs. I have grown very fond of this role which motivates me to continue learning and growing. In addition my previous job responsibilities were providing general PC and network support for school I was working in (IT technician). Besides that working as IT teacher as well helped me learn lot of valueable soft skills as well.  
 
 Tools 🔧
 - [Jira](https://www.atlassian.com/software/jira) - project managment
