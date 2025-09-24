@@ -11,7 +11,7 @@ Being in IT world for long enough I have gone through lot of stuff. When I stumb
 
 Tools 🔧
 - [Jira](https://www.atlassian.com/software/jira) - project managment
-- [Dropbox](https://www.dropbox.com/) - storing data 
+- [Dropbox](https://www.dropbox.com/) - storing test cases for easier sharing
 - [Git](https://git-scm.com/) - controling version control
 - [Github](https://github.com/) - for support of Git and creating repositories
 - [Github Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) - for easier formatting Github
