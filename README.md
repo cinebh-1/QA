@@ -17,6 +17,7 @@ Tools 🔧
 - [Github Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) - for easier formatting Github
 - [Postman](https://www.postman.com/) - for API testing
 - [Playwright](https://playwright.dev/) - for testing web apps
+- [Cypress](https://www.cypress.io/#create) - frontend testing automation tool for web apps 
 - [VisualStudioCode](https://code.visualstudio.com/) - writing and editing code
 - [JMeter](https://jmeter.apache.org/) - load and performance testing
 - [TestRail](https://www.testrail.com/) - test case managment software 
