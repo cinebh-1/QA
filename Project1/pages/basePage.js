@@ -1,7 +1,64 @@
-// all basic methods that we are using are contained here (navigate, click, fill etc...)
-//require('dotenv').config();
+// base page that will contain all shared methods (goto, fill, click etc...)
+import dotenv from 'dotenv';
 
-class BasePage {
+dotenv.config();
+
+export class BasePage {
+  constructor(page) {
+  this.page = page;
+  }
+
+async goto(url) {
+  await this.page.goto(url);
+  await this.page.waitForLoadState('networkidle');
+}
+
+async fillField(locator, value) {
+  await this.page.waitForLoadState('networkidle');
+  await this.page.waitForSelector(locator, {state: 'visible'});
+  await this.page.locator(locator).fill(value);
+  await this.page.waitForTimeout(parseFloat(process.env.CONTACTFORM_TIME_DELAY));
+}
+
+async clickButton(locator) {
+  await this.page.waitForLoadState('networkidle');
+  await this.page.waitForSelector(locator, {state: 'visible'});
+  await this.page.locator(locator).click();
+}
+
+async getText(locator) {
+  return await this.page.locator(locator).textContent();
+}
+
+async isVisible(locator) {
+  return await this.page.locator(locator).isVisible();
+}
+
+async selectDropdownOption(locator, optionValueOrLabel) {
+  //await this.waitForVisible(locator);
+  await this.page.locator(locator).selectOption(optionValueOrLabel);
+  }
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* class BasePage {
   constructor(page) {
     this.page = page;
   }
@@ -41,52 +98,9 @@ class BasePage {
 }
 
 module.exports = BasePage;
+ */
 
 
-
-/* class BasePage {
-    
-    constructor(page) {
-        this.page = page;
-        this.baseUrl = process.env.BASE_URL;
-    }
-
-    // universal navigate method for all pages
-    async goto(path = '/') {
-        await this.page.goto(`${this.baseUrl}${path}`);
-        await this.page.waitForLoadState('networkidle');
-    }
-
-    // universal fill method for all input fields
-    async type(selector, text) {
-        await this.waitForVisible(selector);
-        await this.page.fill(selector, text);
-    }
-
-    // universal click method for all buttons 
-    async click(selector) {
-        await this.waitForVisible(selector);
-        await this.page.click(selector);
-    }
-
-    // universal method for checking selector visibility 
-    async isVisible(selector) {
-        await this.waitForVisible(selector);
-        await this.page.isVisible(selector);
-    }
-
-    // universal method for verifying title of web elements
-    async getText(selector) {
-        return await this.page.textContent(selector);
-    }
-
-    // universal method for static dropdown menu options 
-    async selectDropdownOption(selector, optionValue) {
-        await this.page.selectOption(selector, optionValue);
-    }
-}
-
-module.exports = BasePage; */
 
 
 

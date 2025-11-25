@@ -1,22 +1,64 @@
-const BasePage = require('./basePage');
-require ('dotenv').config();
+import { BasePage } from "./basePage.js";
+import { RegistrationSelectors } from "../selectors/registration-selectors.js";
+import dotenv from ('dotenv');
 
-class RegistrationPage extends BasePage {
-    async register() {
-        await this.goto('/auth/register');
-        //update-ati selectore 
-        await this.fill('#firstName', process.env.REGISTER_FIRSTNAME);
-        await this.fill('#lastName', process.env.REGISTER_LASTNAME);
-        await this.fill('#dob', process.env.REGISTER_DATEOFBIRTH);
-        await this.fill('#street', process.env.REGISTER_STREET);
-        await this.fill('#postalcode', process.env.REGISTER_POSTALCODE);
-        await this.fill('#city', process.env.REGISTER_CITY);
-        await this.fill('#state', process.env.REGISTER_STATE);
-        await this.fill("#country", process.env.REGISTER_COUNTRY);
-        await this.fill('#phone', process.env.REGISTER_PHONE);
-        await this.fill('#email', process.env.REGISTER_EMAIL);
-        await this.fill('#password', process.env.REGISTER_PASSWORD);
+// Load .env variables
+dotenv.config();
+
+export class RegistrationPage extends BasePage {
+
+    // selectors initialized as class fields before constructor
+    firstName = RegistrationSelectors.firstName;
+    lastName = RegistrationSelectors.lastName;
+    dateOfBirth = RegistrationSelectors.dateOfBirth;
+    street = RegistrationSelectors.street;
+    postalCode = RegistrationSelectors.postalCode;
+    city = RegistrationSelectors.city;
+    state = RegistrationSelectors.state;
+    country = RegistrationSelectors.country;
+    phone = RegistrationSelectors.phone;
+    emailAddress = RegistrationSelectors.emailAddress;
+    password = RegistrationSelectors.password;
+    registerButton = RegistrationSelectors.registerButton;
+    
+    // constructor stays clean 
+    constructor(page) {
+        super(page);
+    }
+
+    async goto() {
+        await super.goto(process.env.REGISTER_URL);
+    }
+
+    async fillRegistrationForm(
+        // setting up variables with .env values
+        firstName = process.env.REGISTER_FIRSTNAME,
+        lastName = process.env.REGISTER_LASTNAME, 
+        dateOfBirth = process.env.REGISTER_DATEOFBIRTH,
+        street = process.env.REGISTER_STREET,
+        postalCode = process.env.REGISTER_POSTALCODE,
+        city = process.env.REGISTER_CITY,
+        state = process.env.REGISTER_STATE,
+        country = process.env.REGISTER_COUNTRY,
+        phone = process.env.REGISTER_PHONE,
+        emailAddress = process.env.REGISTER_EMAIL,
+        password = process.env.REGISTER_PASSWORD
+    ) {
+        // using variables inside methods
+        await this.fillField(this.firstName, firstName);
+        await this.fillField(this.fillField, lastName);
+        await this.fillField(this.dateOfBirth, dateOfBirth);
+        await this.fillField(this.street, street);
+        await this.fillField(this.postalCode, postalCode);
+        await this.fillField(this.city, city);
+        await this.fillField(this.state, state);
+        await this.selectDropdownOption(this.country, country);
+        await this.fillField(this.phone, phone);
+        await this.fillField(this.emailAddress, emailAddress);
+        await this.fillField(this.password, password);
+      }
+
+      async submitForm() {
+        await this.clickButton(this.RegistrationSelectors.registerButton);
     }
 }
-
-module.exports = RegistrationPage;
