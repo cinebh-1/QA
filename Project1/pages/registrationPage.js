@@ -1,6 +1,6 @@
-import { BasePage } from "./basePage.js";
-import { RegistrationSelectors } from "../selectors/registration-selectors.js";
-import dotenv from ('dotenv');
+import { BasePage } from './basePage.js';
+import { RegistrationSelectors } from './../selectors/registrationSelectors.js';
+import dotenv from 'dotenv';
 
 // Load .env variables
 dotenv.config();
@@ -26,7 +26,7 @@ export class RegistrationPage extends BasePage {
         super(page);
     }
 
-    async goto() {
+    async gotoRegisterPage() {
         await super.goto(process.env.REGISTER_URL);
     }
 
@@ -46,7 +46,7 @@ export class RegistrationPage extends BasePage {
     ) {
         // using variables inside methods
         await this.fillField(this.firstName, firstName);
-        await this.fillField(this.fillField, lastName);
+        await this.fillField(this.lastName, lastName);
         await this.fillField(this.dateOfBirth, dateOfBirth);
         await this.fillField(this.street, street);
         await this.fillField(this.postalCode, postalCode);
@@ -58,7 +58,7 @@ export class RegistrationPage extends BasePage {
         await this.fillField(this.password, password);
       }
 
-      async submitForm() {
+    async submitForm() {
         await this.clickButton(this.RegistrationSelectors.registerButton);
     }
 }

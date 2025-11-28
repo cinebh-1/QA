@@ -1,6 +1,6 @@
-import { BasePage } from './base-page.js';
-import { LoginSelectors } from '../selectors/login-selectors.js';
-import dotenv from ('dotenv');
+import { BasePage } from './basePage.js';
+import { LoginSelectors } from './../selectors/loginSelectors.js';
+import dotenv from 'dotenv';
 
 // Load .env variables
 dotenv.config();
@@ -17,7 +17,7 @@ export class LoginPage extends BasePage {
         super(page);
     }
 
-    async goto() {
+    async gotoLoginPage() {
         await this.page.goto(process.env.LOGIN_URL);
     }
 
@@ -30,9 +30,8 @@ export class LoginPage extends BasePage {
     }
 
     async submitForm() {
-        await this.clickButton(this.LoginSelectors.loginButton);
+        await this.clickButton(this.loginButton);
     }
+
+    //validacija login-a (neki success message ili profile name da je vidljiv)
 }
-
-
- 

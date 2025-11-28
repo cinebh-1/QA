@@ -1,4 +1,4 @@
-// selectors for Contact form page
+// all selectors for Contact form page
 
 export const ContactSelectors = {
    contactButton: "//a[@data-test='nav-contact']",

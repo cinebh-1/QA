@@ -1,14 +1,5 @@
-
 // @ts-check
-import { devices } from '@playwright/test';
-require ('dotenv').config();
-const { defineConfig } = require('@playwright/test');
-
-module.exports = defineConfig({
-  use: {
-    baseURL: process.env.BASE_URL,
-  },
-});
+import { defineConfig, devices } from '@playwright/test';
 
 /**
  * Read environment variables from file.
@@ -32,14 +23,8 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: [
-    ['allure-playwright', { 
-      detail: true,
-      outputFolder: 'allure-results',
-      suiteTitle: false
-    }],
-    ['html']
-  ],
+   reporter: [["html"], 
+  ["allure-playwright"]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
@@ -47,6 +32,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    headless: false
   },
 
   /* Configure projects for major browsers */
@@ -56,12 +42,12 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
 
-   /*  {
+    /* {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
-    }, */
+    },
 
-  /*   {
+    {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
     }, */
@@ -94,3 +80,4 @@ export default defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
 });
+
