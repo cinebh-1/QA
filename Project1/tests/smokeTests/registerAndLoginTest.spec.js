@@ -12,7 +12,8 @@ test('User can register and login', async({ page }) => {
 
     await loginPage.gotoLoginPage();
     await loginPage.fillLoginForm();
-    await loginPage.submitForm();
-
+    await loginPage.submitForm(); 
     
+    const visible = await loginPage.isVisible();
+    expect(visible).toBe(true);
 });   

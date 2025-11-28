@@ -1,4 +1,5 @@
 // base page that will contain all shared methods (goto, fill, click etc...)
+import { expect } from 'allure-playwright';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -15,14 +16,12 @@ async goto(url) {
 
 async fillField(locator, value) {
   await this.page.waitForLoadState('networkidle');
-  await this.page.waitForSelector(locator, {state: 'visible'});
   await this.page.locator(locator).fill(value);
   await this.page.waitForTimeout(parseFloat(process.env.CONTACTFORM_TIME_DELAY));
 }
 
 async clickButton(locator) {
   await this.page.waitForLoadState('networkidle');
-  await this.page.waitForSelector(locator, {state: 'visible'});
   await this.page.locator(locator).click();
 }
 
@@ -31,12 +30,17 @@ async getText(locator) {
 }
 
 async isVisible(locator) {
-  return await this.page.locator(locator).isVisible();
+  try {
+    const element = typeof locator === 'string' ? this.page.locator(locator) : locator;
+    return await (element).toBeVisible();
+  } catch {
+    return false;
+  }
 }
 
 async selectDropdownOption(locator, optionValueOrLabel) {
-  //await this.waitForVisible(locator);
-  await this.page.locator(locator).selectOption(optionValueOrLabel);
+  const dropdown = this.page.locator(locator);
+  await dropdown.selectOption(optionValueOrLabel);
   }
 }
 

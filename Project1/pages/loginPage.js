@@ -1,5 +1,5 @@
+import { log } from 'console';
 import { BasePage } from './basePage.js';
-import { LoginSelectors } from './../selectors/loginSelectors.js';
 import dotenv from 'dotenv';
 
 // Load .env variables
@@ -8,9 +8,10 @@ dotenv.config();
 export class LoginPage extends BasePage {
 
     // selectors initialized as class fields 
-    emailAddress = LoginSelectors.emailAddress;
-    password = LoginSelectors.password;
-    loginButton = LoginSelectors.loginButton;
+    emailAddress = "//input[@id='email']";
+    password = "//input[@id='password']";
+    loginButton = "//input[@value='Login']";
+    loginUsername = "//a[@data-test='nav-menu']";
 
     // constructor stays clean
     constructor(page) {
@@ -31,6 +32,10 @@ export class LoginPage extends BasePage {
 
     async submitForm() {
         await this.clickButton(this.loginButton);
+    }
+
+    async usernameIsVisible(loginUsername) {
+        return await this.isVisible(this.loginUsername);
     }
 
     //validacija login-a (neki success message ili profile name da je vidljiv)

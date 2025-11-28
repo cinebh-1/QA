@@ -1,5 +1,4 @@
 import { BasePage } from './basePage.js';
-import { RegistrationSelectors } from './../selectors/registrationSelectors.js';
 import dotenv from 'dotenv';
 
 // Load .env variables
@@ -8,18 +7,18 @@ dotenv.config();
 export class RegistrationPage extends BasePage {
 
     // selectors initialized as class fields before constructor
-    firstName = RegistrationSelectors.firstName;
-    lastName = RegistrationSelectors.lastName;
-    dateOfBirth = RegistrationSelectors.dateOfBirth;
-    street = RegistrationSelectors.street;
-    postalCode = RegistrationSelectors.postalCode;
-    city = RegistrationSelectors.city;
-    state = RegistrationSelectors.state;
-    country = RegistrationSelectors.country;
-    phone = RegistrationSelectors.phone;
-    emailAddress = RegistrationSelectors.emailAddress;
-    password = RegistrationSelectors.password;
-    registerButton = RegistrationSelectors.registerButton;
+    firstName = "//input[@id='first_name']";
+    lastName = "//input[@id='last_name']";
+    dateOfBirth = "//input[@id='dob']";
+    street = "//input[@id='street']";
+    postalCode = "//input[@id='postal_code']";
+    city = "//input[@id='city']";
+    state = "//input[@id='state']";
+    country = "//select[@id='country']";
+    phone = "//input[@id='phone']";
+    emailAddress = "//input[@id='email']"; 
+    password = "//input[@id='password']";
+    registerButton = "//button[@type='submit']";
     
     // constructor stays clean 
     constructor(page) {
@@ -59,6 +58,6 @@ export class RegistrationPage extends BasePage {
       }
 
     async submitForm() {
-        await this.clickButton(this.RegistrationSelectors.registerButton);
+        await this.clickButton(this.registerButton);
     }
 }
