@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Playwright Test (Windows)",
+      "type": "node",
+      "request": "launch",
+
+      "program": "${workspaceFolder}/node_modules/@playwright/test/cli.js",
+
+      "args": [
+        "test",
+        "tests/api-tests/billPaying.spec.js",
+        "--project=chromium",
+        "--headed"
+      ],
+
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+
+      "runtimeArgs": ["--inspect-brk"],
+
+      "sourceMaps": true,
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}
