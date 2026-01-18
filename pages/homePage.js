@@ -6,7 +6,7 @@ dotenv.config();
 
 export class HomePage extends BasePage {
 
-    // selectors
+    // selectors for ToolShop app
     combinationPliers = "//a[@class='card'][1]";
     cartButton = "//button[@id='btn-add-to-cart']";
     searchBox = "//input[@id='search-query']";
@@ -20,6 +20,13 @@ export class HomePage extends BasePage {
     languageChangeButton = "//button[@data-test='language-select']";
     languageChangeToGerman = "//a[@data-test='lang-de']";
     languageChangeToBosnian = "//a[@data-test='lang-ba']";
+
+    //selectors for Cinebh app
+    firstSignInButton = "//*[contains(text(), 'Sign In')]";
+    emailField = "//input[@placeholder='Email Address']";
+    passwordField = "//input[@placeholder='Password']";
+    secondSignInButton = "//div[@class='space-y-6']/button";
+    username = "//*[contains(text(),'mihaljcicfilip')]";
     
     constructor(page) {
         super(page);
