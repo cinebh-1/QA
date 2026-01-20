@@ -6,7 +6,7 @@ dotenv.config();
 
 export class HomePage extends BasePage {
 
-    // selectors for ToolShop app
+    // ToolShop app related selectors
     combinationPliers = "//a[@class='card'][1]";
     cartButton = "//button[@id='btn-add-to-cart']";
     searchBox = "//input[@id='search-query']";
@@ -21,7 +21,7 @@ export class HomePage extends BasePage {
     languageChangeToGerman = "//a[@data-test='lang-de']";
     languageChangeToBosnian = "//a[@data-test='lang-ba']";
 
-    //selectors for Cinebh app
+    // Cinebh app related selectors
     firstSignInButton = "//*[contains(text(), 'Sign In')]";
     emailField = "//input[@placeholder='Email Address']";
     passwordField = "//input[@placeholder='Password']";
@@ -31,6 +31,8 @@ export class HomePage extends BasePage {
     constructor(page) {
         super(page);
     }
+
+    // ToolShop app related methods()
 
     async goto() {
         await super.goto(process.env.BASE_URL);
@@ -102,5 +104,31 @@ export class HomePage extends BasePage {
         await this.clickButton(this.languageChangeButton);
         await this.clickButton(this.languageChangeToBosnian);
         await this.page.waitForTimeout(parseFloat(process.env.TIME_DELAY));
+    }
+
+    // Cinebh app related methods() 
+
+    async gotoCinebhHomePage() {
+        await super.goto(process.env.CINEBH_URL);
+    }
+
+    async clickSignInButton1() {
+        await this.clickButton(this.firstSignInButton);
+    }
+
+    async fillCineBhEmail() {
+        await this.fillField(this.emailField, process.env.CINEBH_EMAIL);
+    }
+
+    async fillCineBhPassword() {
+        await this.fillField(this.passwordField, process.env.CINEBH_PASSWORD);
+    }
+
+    async clickSignInButton2() {
+        await this.clickButton(this.secondSignInButton);
+    }
+
+    async usernameIsVisible() {
+        return await this.page.isVisible(this.username);
     }
 }
