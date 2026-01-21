@@ -75,7 +75,7 @@ Ensure following tools are installed on your system:
     *Run tests for a specific browser - npx playwright test --project=Chromium
     *Run a specific test file - npx playwright test tests/example.spec.js
 
-9. **Test reports**
+9. **Test reports**\
     Generate and view the HTML report:
         npx playwright show-report
     Report location: 
