@@ -103,7 +103,7 @@ Ensure following tools are installed on your system:
     Add exclusions for:
         node_modules\.cache\ms-playwright
 
-**Folder Structure**
+# Folder Structure
 ├── tests/
 │   └── example.spec.ts
 ├── playwright.config.ts
